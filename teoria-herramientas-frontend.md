@@ -4,6 +4,7 @@
 
 ## Índice
 
+1. [Introducción](https://github.com/jonmircha/slides-herramientas-frontend)
 1. [Node.js](#nodejs)
 1. [NPM](#npm)
 1. [Paquetes NPM](#paquetes-npm)
@@ -13,7 +14,6 @@
 1. [Preprocesadores](#preprocesadores)
 1. [Gestores de Tareas](#gestores-de-tareas)
 
-**[⬆ regresar al inicio](./readme.md)**
 
 ## Node.js
 
@@ -26,6 +26,8 @@
 * [io.js y el presente futuro de Node.js](http://jonmircha.github.io/slides-nodejs/#/44)
 * [Instalación](http://jonmircha.github.io/slides-nodejs/#/57)
 * [Más Info](https://www.youtube.com/playlist?list=PLvq-jIkSeTUY3gY-ptuqkNEXZHsNwlkND)
+* [Node Version Manager](https://github.com/creationix/nvm) (NVM)
+	* [NVM para Windows](https://github.com/coreybutler/nvm-windows)
 
 **[⬆ regresar al índice](#Índice)**
 
@@ -166,12 +168,6 @@ Cuando un proyecto tiene el archivo **`package.json`** se pueden instalar todas 
 $ > npm install
 ```
 
-### Actualización de paquetes
-
-```
-$ > npm update [package]
-```
-
 ### Desinstalación de paquetes
 
 Si se utiliza el flag **`--save`** o **`--save-dev`** se elimina el registro del archivo **`package.json`**, si se usa **`--global`** se elimina del ordenador
@@ -207,6 +203,7 @@ $ > npm view [package] versions
 
 
 ## Git
+
 ![Git](http://bextlan.com/img/para-cursos/logo-git.png)
 
 #### Software de Control de versiones
@@ -216,6 +213,7 @@ $ > npm view [package] versions
 #### Control de versiones distribuido
 
 Se denomina **"distribuido"** porque cada miembro del equipo dispone de una copia completa del código.
+
 ![Git es Distribuido](http://bextlan.com/img/para-cursos/git-distributed.png)
 
 #### Control de versiones descentralizado
@@ -226,6 +224,7 @@ Los miembros del equipo pueden enviarse código, recibirlo y desarrollar funcion
 ### Ventajas de usar Git
 
 ![Estadísticas Git](http://bextlan.com/img/para-cursos/git-estadisticas.png)
+
 * Estándar actual
 * Código colaborativo, versionado y distribuido
 * Recuperación de archivos
@@ -520,7 +519,7 @@ Son soportados por plataformas web como:
 	* [Tutorial interactivo](http://www.markdowntutorial.com/)
 	* [Dillinger - md en vivo](http://dillinger.io/)
 	* [Hashify  - md en vivo](http://hashify.me/)
-* [Jade](http://jade-lang.com/)
+* [Pug](https://pugjs.org)
 * [Haml](http://haml.info/)
 * [Slim](http://slim-lang.com/)
 * [Handlebars](http://handlebarsjs.com/)

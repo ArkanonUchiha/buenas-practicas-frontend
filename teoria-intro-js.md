@@ -5,6 +5,7 @@
 ## "Es el único lenguaje en el que me doy cuenta que las personas sienten que no necesitan aprenderlo antes de empezar a utilizarlo." ([Douglas Crockford](http://www.crockford.com/))
 
 ## Índice
+
 1. [JavaScript: BEGINS (1995)](#javascript-begins-1995)
 1. [JavaScript: AGE OF FLASH (2000)](#javascript-age-of-flash-2000)
 1. [JavaScript: AGE OF HTML5 (2008)](#javascript-age-of-html5-2008)
@@ -14,8 +15,6 @@
 1. [EcmaScript](#ecmascript)
 1. [Buenas Prácticas](#buenas-prácticas)
 1. [Libros](#libros)
-
-**[⬆ regresar al inicio](./readme.md)**
 
 ### JavaScript: BEGINS (1995)
 
@@ -53,6 +52,7 @@
 ### JavaScript: AGE OF HTML5 (2008)
 
 ![Implementaciones HTML5](http://www.w3.org/html/logo/badge/html5-badge-h-connectivity-css3-device-graphics-multimedia-performance-semantics-storage.png)
+
 * De 2008 a 2014 se define e implementa [HTML5](https://www.w3.org/html/logo/)
 * HTML5 apesta a JavaScript (6 de sus 8 implementaciones son JS)
 * Comienzan a proliferar librerías y frameworks para todo propósito
@@ -70,7 +70,6 @@
     * Front end (JavaScript)
     * Back end (Node.js)
     * Persistencia de Datos (Varias opciones)
-
 * JavaScript hoy nos permite crear:
     * Sitios Web Front end
     * Aplicaciones SPA (_Single Page Application_)
@@ -111,7 +110,7 @@
 * Librerías basadas en Componentes Web
     * [React](https://facebook.github.io/react/)
     * [Polymer](https://www.polymer-project.org/)
-* Frameworks Back end para [Node](https://nodejs.org/)
+* Frameworks Back end para [Node.js](https://nodejs.org/)
     * [Express](http://expressjs.com/)
     * [Socket.IO](http://socket.io/)
     * [Sails](http://sailsjs.org/)
@@ -126,6 +125,7 @@
     * [Firebase](https://www.firebase.com/)
 * Aplicaciones Híbridas (Nativas):
     * [React Native](https://facebook.github.io/react-native/)
+    * [NativeScript](https://www.nativescript.org/)
     * [Ionic](http://ionicframework.com/)
     * [Meteor](https://www.meteor.com/)
     * [Adobe PhoneGap](http://phonegap.com/)
@@ -138,12 +138,16 @@
 * Gestores de Paquetes
     * [NPM](https://www.npmjs.com/)
     * [Bower](http://bower.io/)
+    * [Yarn](https://yarnpkg.com/)
 * Linters
     * [JSLint](http://www.jslint.com/)
     * [JSHint](http://jshint.com/)
 * Preprocesadores
     * [CoffeeScript](http://coffeescript.org/)
     * [TypeScript](https://www.typescriptlang.org/)
+* Micro Controladores
+    * [NodeBots](http://nodebots.io/)
+    * [Johnny-Five](http://johnny-five.io/)
 
 **[⬆ regresar al índice](#Índice)**
 
@@ -184,6 +188,7 @@
 ### Buenas Prácticas
 
 * [JavaScript The Right Way](http://jstherightway.org/es-es/)
+* [Principles of Writing Consistent, Idiomatic JavaScript](https://github.com/rwaldron/idiomatic.js)
 * [JavaScript Garden](http://bonsaiden.github.io/JavaScript-Garden/es/)
 * [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript#airbnb-javascript-style-guide-)
 * [Can I Use](http://caniuse.com/)
@@ -197,7 +202,7 @@
 
 * [Introducción a JavaScript](http://librosweb.es/libro/javascript/)
 * [Introducción a AJAX](http://librosweb.es/libro/ajax/)
-* [JavaScript The Good Parts](https://www.ebooks-it.net/ebook/javascript-the-good-parts)
 * [Eloquent JavaScript](http://eloquentjavascript.net/)
+* [JavaScript The Good Parts](https://www.ebooks-it.net/ebook/javascript-the-good-parts)
 
 **[⬆ regresar al índice](#Índice)**

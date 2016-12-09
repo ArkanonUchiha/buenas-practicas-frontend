@@ -1,10 +1,12 @@
 # Fundamentos de Programación JavaScript
+
 ![JavaScript](http://bextlan.com/img/para-cursos/javascript.jpg)
 
 **Nota: JavaScript hoy esta en todos lados (Front end, Back end, Bases de Datos, Servidores, Terminal, Hardware, Software, etc). El enfoque de este documento es introductorio a los Fundamentos de Programación Web del lado Front end con JavaScript: conceptos básicos de programación, programación orientada a objetos, gramática y sintaxis de JS, interacción con HTML y CSS, eventos, formularios, JSON y AJAX.**
 
 
 ## Índice
+
 1. [Programación](#programaciÓn)
 1. [Programación Orientada a Objetos](#programaciÓn-orientada-a-objetos)
 1. [Gramática JS](#gramática-javascript)
@@ -13,17 +15,18 @@
 1. [Las buenas partes de JS](#las-buenas-partes-de-javascript)
 1. [DOM](#dom)
 1. [Eventos](#eventos)
+1. [BOM](#bom)
 1. [Agente de Usuario](#agente-de-usuario)
 1. [Media Queries](#media-queries)
 1. [Formularios](#formularios)
-1. [JSON](#json)
 1. [AJAX](#ajax)
+1. [JSON](#json)
 1. [API's](#apis)
 1. [JavaScript Diferido y Asíncrono](#javascript-diferido-y-asíncrono)
 
-**[⬆ regresar al inicio](./readme.md)**
 
 ## PROGRAMACIÓN
+
 La gente cree que programar es dificil, algunas razones:
 
 * MALOS Profesores
@@ -51,26 +54,33 @@ La programación es:
 * **Diagrama de Flujo**: Es es la representación gráfica de un algoritmo
 
 #### Símbolos de los Diagramas de Flujo
+
 ![Símbolos de los Diagramas de Flujo](http://bextlan.com/img/para-cursos/simbolos-diagramas-flujo.png)
 
 #### Ejemplo de un diagrama de flujo para determinar si un número dado es par o impar
+
 ![Ejemplo Diagrama de Flujo](http://bextlan.com/img/para-cursos/diagrama-par-impar.jpg)
 
 **[⬆ regresar al índice](#Índice)**
 
 
 ## PROGRAMACIÓN ORIENTADA A OBJETOS
+
 La POO es un paradigma de programación que utiliza objetos e interacciones en el diseño de un sistema y está compuesta por varios elementos y características
 
 La POO trata de plasmar o representar la realidad del mundo físico (lo concreto) 
 y llevarlo al mundo digital (lo abstracto)
 
 ### Platón primer programador POO
+
 ![Platón](http://bextlan.com/img/para-cursos/platon.jpg)
+
 > Decía que vivimos en el mundo de las ideas, y los objetos son representaciones físicas de esa idea
+
 > > [Teoría de las Ideas](https://es.wikipedia.org/wiki/Teor%C3%ADa_de_las_formas)
 
 ### 4 CONCEPTOS BÁSICOS DE POO
+
 * Clase
 * Objeto
 * Métodos
@@ -92,20 +102,24 @@ kenai.esterilizado = true;
 ```
 
 #### Clase: 
+
 * Es un **Modelo** a seguir
 * La idea de Platón
 * Sintaxis: `Class Perro {...}`
 
 #### Objeto:
+
 * Representación o **Instancia** de una clase
 * La representación física de la idea de Platón
 * Sintaxis: `kenai = new Perro();`
 
 Los objetos tienen 2 facultades:
+
 * Métodos
 * Atributos
 
 #### Métodos: 
+
 * Son las cosas o **Acciones** que hacen los objetos
 	* Sintaxis: `objeto.metodo();`
    	* correr, caminar, mover la cola, ladrar (verbos/acciones)
@@ -117,6 +131,7 @@ Los objetos tienen 2 facultades:
 	* `function comer(comida) { ... }`
 
 #### Atributos: 
+
 * Son las características o **Propiedades** que tienen los objetos
 	* Sintaxis: `objeto.atributo = valor;`
 	* `kenai.raza = 'Criollo';`
@@ -129,6 +144,7 @@ Los objetos tienen 2 facultades:
 
 
 ## Gramática JavaScript
+
 La gramática se define como el estudio de las reglas y principios que estandarizan el uso del lenguaje dentro de la oración
 
 Si llevamos este término a la programación podríamos entender el concepto de la gramática como las reglas y principios que regulan la escritura del código
@@ -136,27 +152,26 @@ Si llevamos este término a la programación podríamos entender el concepto de 
 Por ende entendemos que no es solo es el hecho de escribir código como se nos de la gana, sino que debemos escribir código que sea entendible y ordenado
 
 ### Nomenclatura
+
 * De archivos
     * Usa `snake_case`
     * `js_style_guide.js`
-
 * De objetos, primitivos, funciones e instancias
     * Usa `camelCase`
     * `var myObj = {};`
     * `var myNum = 1;`
     * `var myMap = new Map();`
     * `function myFn() {}`
-
 * De clases y constructores
     * Usa `PascalCase`
     * `class MyClass {}`
     * `function MyClass() {}`
-
 * De constantes
     * Usa `UPPER_CASE`
     * `const MY_CONSTANT = 1;`
 
 ### Palabras Reservadas
+
     A: abstract
     B: boolean, break, byte
     C: case, catch, char, class, const, continue
@@ -175,19 +190,20 @@ Por ende entendemos que no es solo es el hecho de escribir código como se nos d
     W: while, with
 
 ### Tipos de Datos
+
 * **Primitivos**: Cuando se accede a un tipo primitivo se trabaja directamente sobre su valor
     + `string`
     + `number`
     + `boolean`
     + `null`
     + `undefined`
-
 * **Complejo**: Cuando se accede a un tipo complejo se trabaja en una referencia a su valor
     + `object = {}`
     + `array = []`
     + `function`
 
 ### Ordenamiento de Código
+
 1. Importaciones o requerimientos de otros archivos o librerias
 2. Definición de constantes
 3. Definición de variables y objetos
@@ -195,12 +211,14 @@ Por ende entendemos que no es solo es el hecho de escribir código como se nos d
 5. Asignación de eventos y estados iniciales
 
 ### Más Gramática
+
 * [Comentarios](https://github.com/airbnb/javascript#comments)
 * [Espacio en Blanco](https://github.com/airbnb/javascript#whitespace)
 * [Punto y coma](https://github.com/airbnb/javascript#semicolons)
 * [Guía de Estilo JavaScript de Airbnb](https://github.com/airbnb/javascript#airbnb-javascript-style-guide-)
 
 ### Objetos principales de JavaScript en el Front end
+
 * **`window`**
 * **`document`**
 * **`navigator`**
@@ -209,6 +227,7 @@ Por ende entendemos que no es solo es el hecho de escribir código como se nos d
 
 
 ## Sintaxis JavaScript
+
 * [Programación Básica](http://librosweb.es/libro/javascript/capitulo_3.html)
 	* Variables
 	* Tipos de variables
@@ -235,7 +254,6 @@ Por ende entendemos que no es solo es el hecho de escribir código como se nos d
 		* Funciones útiles para cadenas de texto
 		* Funciones útiles para arrays
 		* Funciones útiles para números
-
 * [Programación Avanzada](http://librosweb.es/libro/javascript/capitulo_4.html)
 	* Funciones
 		* Argumentos y valores de retorno
@@ -250,6 +268,7 @@ Por ende entendemos que no es solo es el hecho de escribir código como se nos d
 
 
 ## Servidor Web
+
 Muchas de las funciones que se realizan en un sitio o aplicación web requieren el acceso a los recursos mediante el protocolo [HTTP](https://es.wikipedia.org/wiki/Hypertext_Transfer_Protocol) y para ello necesitamos acceder desde nuestro navegador web a un [Servidor Web](https://es.wikipedia.org/wiki/Servidor_web)
 
 Si miramos la barra de direcciónes de nuestro navegador veremos que la ruta de la url empieza con `http://`
@@ -299,50 +318,63 @@ Cuando trabajes en el desarrollo de un sitio o aplicación localmente, siempre d
 ## Las Buenas Partes de JavaScript
 
 ### Orientado a Objetos
+
 Los objetos son una colección de propiedades.
 
 JavaScript tiene un fuerte enfoque de programación orientada a objetos, a pesar de algunos debates que tienen lugar debido a las diferencias de la orientacion a objetos en Javascript comparado con otros lenguajes.
 
 #### Programación basada ​​en Prototipos
+
 La programación basada ​​en prototipos es un estilo de programación orientada a objetos en la que las clases no están presentes y la reutilización de comportamiento (conocido como herencia en lenguajes basados ​​en clases) se lleva a cabo a través de un proceso de decoración de objetos existentes que sirven de prototipos. Este modelo también se conoce como programación sin clases, orientada a prototipos o basada en ejemplos.
 
 #### 4 Formas de crear objetos en JS:
+
 1. Objetos literales
 2. Prototipo Object()
 3. Función Constructora
 4. Clases (apartir de ES6 o ES2015)
 
 ### Funciones como Objetos de Primera Clase (Functions as First-Class Objects)
+
 Las funciones en JavaScript son objetos de primera clase. Esto significa que las funciones son simplemente un tipo de objeto especial, con las cuales se pueden hacer las mismas cosas que cualquier otro objeto podria hacer.
 
 ### Tipado Blando (Loose Typing)
+
 No es necesario especificar el tipo de dato de una variable al ser declarada, cuando se le asigna un valor, JavaScript detecta el tipo de dato automáticamente.
 
 ### Alcance y Elevación (Scoping & Hoisting)
+
 **Alcance:** En JavaScript, las funciones son nuestras delimitadoras del alcance de facto al momento de la declaración de variables, lo cual significa que los bloques que son de bucles y condicionales (tales como `if`, `for`, `while`, `switch` y `try`) NO delimitan el alcance, a diferencia de la mayoría de otros lenguajes. Por lo tanto, estos bloques compartirán el mismo alcance que la función que las contiene. De esta forma, podría ser peligroso declarar variables dentro de bloques si se requiere que las variables sólo sean vistas en el bloque que pertenecen.
 
-**Elevación:** En ejecución, todas las declaraciones `var` y `function` son movidas para el comienzo de cada función (su alcance) esto es conocido como Elevación. Por ello, es buena práctica declarar todas las variables juntas en la primera línea, con el fín de evitar falsas expectativas con las variables que han sido declaradas luego de la asignación de su valor.
+**Elevación:** En ejecución, todas las declaraciones `var` y `function` son movidas para el comienzo de cada función (su alcance) esto es conocido como Elevación. Por ello, es buena práctica declarar todas las variables juntas en la primera línea, con el fín de evitar falsas expectativas con las variables que han sido declaradas luego de la asignación de su valor. [Más info](http://www.etnassoft.com/2010/12/26/hoisting-en-javascript/).
 
 ### Modo Estrícto (Strict Mode)
+
 El modo estricto de ECMAScript 5 es una manera de optar por una forma restringida de JavaScript. El código en modo estricto y en modo no estrícto pueden coexistir, de esta forma, scripts pueden optar entrar al modo estrícto de forma incremental.
 
 ### Funciones Anónimas (Anonymous Functions)
+
 Funciones anómimas que son declaradas dinámicamente en tiempo de ejecución. Son llamadas anónimas porque no poseen un nombre de la misma manera que las funciones normales
 
 ### Funciones de Clausura (Closure Functions)
+
 Las clausuras o closures son funciones que hacen referencia a variables independientes (libres). En otras palabras, la función definida en el closure 'recuerda' el ambiente en el cual esta fue creado. Esto es un importante concepto para entender, así como útil durante el desarrollo, por ejemplo emular métodos privados. Esto puede también ayuda a aprender como evitar errores, como crear closures en bucles.
 
 ### Funciones Auto Invocadas o Auto Ejecutables (Immediately-Invoked Functions)
+
 Es un patrón el cual produce un scope léxico usando las funciones de scoping de Javascript. La Expresión de función inmediatamente invocada puede ser usada para evitar el hoisting de las variables con los bloques, protege contra la contaminación del ambiente global y simultáneamente permite acceder a los métodos publicos al tiempo que conserva la privacidad en las variables definidas dentro de la función. También se conoce. Este patrón ha sido referido también como una **función anónima autoejecutable**.
 
 **[⬆ regresar al índice](#Índice)**
 
 
 ## DOM
+
 El **Modelo de Objetos del Documento** (DOM - Document Object Model) es un API para documentos HTML y XML. Este prevee una representación estructural del documento, permitiéndole modificar su contenido y presentación visual mediante el uso de un lenguaje de scripting tal como JavaScript.
+
 ![DOM](http://bextlan.com/img/para-cursos/dom.png)
 
 ### Métodos para acceder a los elementos del DOM (Selectores)
+
 * **`document.getElementsByTagName('tag-name')`** devuleve un arreglo con todos los elementos de una etiqueta HTML
 * **`document.getElementsByClassName('class-name')`** devuleve un arreglo con todos los elementos de una clase CSS
 * **`document.getElementsByName('name-attribute-value')`** devuleve el elemento que tenga el valor del atributo name buscado
@@ -351,14 +383,14 @@ El **Modelo de Objetos del Documento** (DOM - Document Object Model) es un API p
 * **`document.querySelector('a-selector')`** devuleve el elemento que tenga el valor del selector buscado
 
 ### Atributos para acceder a los nodos y elementos del DOM por su posición jerárquica:
+
 * Nodos (Elementos y Textos):
 	* **`.parentNode`**: Nodo padre
 	* **`.childNodes`**: Nodos hijos
 	* **`.firstChild`**: Primer nodo hijo
 	* **`.lastChild`**: Último nodo hijo
 	* **`.nextSibling`**: Siguiente nodo hermano 
-	* **`.previousSibling`**: Anterior nodo hermano
-	
+	* **`.previousSibling`**: Anterior nodo hermano	
 * Elementos (Etiquetas HTML):
 	* **`.parentElement`**: Elemento padre
 	* **`.children`**: Elementos hijos
@@ -368,10 +400,12 @@ El **Modelo de Objetos del Documento** (DOM - Document Object Model) es un API p
 	* **`.previousElementSibling`**: Anterior elemento hermano
 
 ### Métodos para crear elementos en el DOM
+
 * **`.createElement('HTMLElement')`**: Crea un nuevo elemento HTML del tipo especificado y devuelve un referencia a dicho elemento
 * **`.createTextNode('string')`**: Crea un nuevo nodo de texto con el contenido especificado en la cadena de texto
 
 ### Métodos para agregar, reemplazar y eliminar nodos en el DOM
+
 * **`.appendChild(child-node)`**: Agrega un nodo hijo al elemento especificado
 * **`.removeChild(child-node)`**: Elimina un nodo hijo al elemento especificado
 * **`.replaceChild(new-node, replaced-node)`**: Reemplaza un nodo hijo al elemento especificado
@@ -379,11 +413,13 @@ El **Modelo de Objetos del Documento** (DOM - Document Object Model) es un API p
 * **`.cloneNode(boolean)`**: Clona el nodo especificado. `true` con contenido, `false` vacío
 
 ### Atributos para crear o modificar nodos y elementos en el DOM
+
 * **`.nodeValue = 'string'`**: Crea o modifica el texto de un nodo especificado
 * **`.innerText = 'string'`**: Crea o modifica el contenido de texto del elemento especificado
 * **`.innerHTML = 'HTML Content'`**: Crea o modifica el contenido HTML del elemento especificado
 
 ### Accediendo a las clases CSS en el DOM
+
 * **`.className`**: Devuelve una cadena de texto con los nombres de las clases del elemento especificado
 * **`.classList`**: Devuelve un arreglo con los nombres de las clases del elemento especificado
 * **`.classList[n]`**: Devuelve la clase que se encuentre en la posición `n` del arreglo `classList` del elemento especificado
@@ -393,17 +429,20 @@ El **Modelo de Objetos del Documento** (DOM - Document Object Model) es un API p
 * **`.classList.toggle('class-name')`**: Intercambia (agrega o elimina) la clase CSS mencionada al elemento especificado
 
 ### Accediendo a Atributos HTML en el DOM
+
 * **`.getAttribute('name-attribute')`**: Obteniendo el valor de un atributo HTML del elemento especificado
 * **`.setAttribute('name-attribute', 'new-value')`**: Estableciendo el valor de un atributo HTML del elemento especificado
 * **`elemento.nombreAtributo`**: Obteniendo el valor de un atributo HTML del elemento especificado
 * **`elemento.nombreAtributo = 'nuevo valor'`**: Estableciendo el valor de un atributo HTML del elemento especificado
 
 ### Accediendo a Estilos CSS en el DOM
+
 * **`.style`**: Objeto que contiene todos los atributos CSS del elemento especificado
 * **`elemento.style.nombreAtributo`**: Obteniendo el valor de un atributo CSS del elemento especificado
 * **`elemento.style.nombreAtributo = 'nuevo valor'`**: Estableciendo el valor de un atributo CSS del elemento especificado
 
 ### Insertando texto o contenido HTML dinámico al DOM:
+
 * [**`.insertAdjacentHTML(position, content);`**](https://developer.mozilla.org/es/docs/Web/API/Element/insertAdjacentHTML): Agrega contenido:
 	* **`'beforebegin'`**: Antes del elemento mismo
 	* **`'afterbegin'`**: Dentro del elemento, antes del primer elemento hijo
@@ -424,6 +463,7 @@ El **Modelo de Objetos del Documento** (DOM - Document Object Model) es un API p
 
 
 ## Eventos
+
 JavaScript pueden utilizar el modelo de programación basada en eventos. En este tipo de programación, los scripts se dedican a esperar a que el usuario **haga algo** (que pulse una tecla, que mueva el ratón, que cierre la ventana del navegador), el script responde a la acción del usuario normalmente procesando esa interacción y generando un resultado.
 
 Los eventos hacen posible que los usuarios transmitan información al sitio o aplicación. JavaScript define numerosos eventos que permiten una interacción completa entre el usuario y la web. La pulsación de una tecla, pinchar o mover el ratón, seleccionar un elemento de formulario, redimensionar la ventana del navegador; son algunos ejemplos de la [lista de eventos](http://librosweb.es/libro/javascript/capitulo_6/modelo_basico_de_eventos_2.html) disponible en JS.
@@ -451,6 +491,7 @@ Existen 3 formas de generar manejadores de eventos en JS:
 ```
 
 ### Manejador de eventos semántico
+
 #### Con función definida
 
 ```HTML
@@ -492,6 +533,7 @@ Existen 3 formas de generar manejadores de eventos en JS:
 ```
 
 ### Manejador de eventos múltiple
+
 #### Con función definida
 
 ```HTML
@@ -573,7 +615,44 @@ Hay un tercer parámetro de tipo **`boolean`**, si éste no se especifica, por d
 **[⬆ regresar al índice](#Índice)**
 
 
+## BOM
+
+El **Modelo de Objetos del Navegador** (BOM - Browser Object Model) es un API que permite acceder y modificar las propiedades de las ventanas del propio navegador.
+
+Mediante BOM, es posible redimensionar y mover la ventana del navegador, modificar el texto que se muestra en la barra de estado y realizar muchas otras manipulaciones no relacionadas con el contenido de la página HTML.
+
+El mayor inconveniente de BOM es que, al contrario de lo que sucede con DOM, ninguna entidad se encarga de estandarizarlo o definir unos mínimos de interoperabilidad entre navegadores.
+
+![BOM](http://bextlan.com/img/para-cursos/bom.gif)
+
+### Atributos, Métodos y Eventos de la ventana del navegador
+
+* Atributos de la ventana:
+	* **`.innerWidth`** devuelve al ancho del viewport
+	* **`.innerHeight`** devuelve el alto del viewport
+	* **`.outerWidth`** devuelve al ancho del navegador
+	* **`.outerHeight`** devuelve el alto del navegador
+	* **`.scrollX`** devuelve la distancia recorrida en el scroll horizontal
+	* **`.scrollY`** devuelve la distancia recorrida en el scroll vertical
+	* **`.screenX`** devuelve la posición de la ventana del navegador respecto de la pantalla en el eje horizontal
+	* **`.screenY`** devuelve la posición de la ventana del navegador respecto de la pantalla en el eje vertical
+* Métodos de la ventana:
+	* **`alert('string')`** muestra una ventana con un mensaje y un botón de aceptar que devuelve **`true`**
+	* **`confirm('string')`** muestra una ventana con un mensaje y 2 botones: aceptar que devuelve **`true`** y cancelar que devuelve **`false`**
+	* **`prompt('string')`** muestra una ventana con un mensaje solicitando información al usuario y 2 botones: aceptar que devuelve **`true`** y cancelar que devuelve **`false`**
+	* **`open('url')`** abre una ventana nueva o la url especificada
+	* **`close()`** cierra la ventana actual, siempre y cuando haya sido abierta con el método **`open()`**
+	* **`print()`** imprime la ventana actual
+* Eventos de la ventana:
+	* **`load`** sucede al cargar la ventana del navegador
+	* **`resize`** sucede al redimensionar la ventana del navegador
+	* **`scroll`** sucede al mover las barras de desplazamiento de la ventana del navegador
+
+**[⬆ regresar al índice](#Índice)**
+
+
 ## Agente de Usuario
+
 Un agente de usuario es una aplicación informática que funciona como cliente en un protocolo de red; el nombre se aplica generalmente para referirse a aquellas aplicaciones que acceden a Internet.
 
 Los agentes de usuario que se conectan a la web pueden ser desde navegadores web hasta los web crawler de los buscadores, pasando por teléfonos móviles, lectores de pantalla y navegadores en braille usados por personas con discapacidades.
@@ -594,6 +673,7 @@ La identificación de agente de usuario es uno de los criterios de exclusión ut
 ## Media Queries
 
 ### Media Queries en CSS
+
 Desde la especificación de CSS 2.1, las hojas de estilo han tenido cierto grado de capacidad para el reconocimiento de dispositivos mediante el uso de tipos de medios. Por ejemplo:
 
     <link rel="stylesheet" href="print.css" media="print">
@@ -619,6 +699,7 @@ La sintaxis es la siguiente:
 * Lista completa de [media queries](https://www.w3.org/TR/css3-mediaqueries/)
 
 ### Media Queries en JS
+
 Nos permitirán cargar el contenido más adecuado, dependiendo de las características de hardware, software o tipo de conexión del dispositivo que visualice nuestro sitio o aplicación.
 
 * [Programando Media Queries en JS](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Testing_media_queries)
@@ -628,13 +709,16 @@ Nos permitirán cargar el contenido más adecuado, dependiendo de las caracterí
 * [¿Puedo usarlas?](http://caniuse.com/#search=matchMedia)
 
 Esto nos permite sentar las bases de WPO (**Web Performance Optimization**) en nuestros sitios y aplicaciones web
+
 * [WPO Wikipedia](https://en.wikipedia.org/wiki/Web_performance)
 * [WPO Google](https://developers.google.com/web/fundamentals/performance/?hl=es)
 * [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
 
 **[⬆ regresar al índice](#Índice)**
 
-##Formularios
+
+## Formularios
+
 La programación de aplicaciones que contienen formularios web siempre ha sido una de las tareas fundamentales de JavaScript. De hecho, una de las principales razones por las que se inventó el lenguaje de programación fue la necesidad de validar los datos de los formularios directamente en el navegador del usuario. De esta forma, se evitaba recargar la página cuando el usuario cometía errores al rellenar los formularios.
 
 No obstante, la aparición de AJAX y las API's de HTML5 han relevado al tratamiento de formularios como la principal actividad del lenguaje. Ahora, el principal uso de JavaScript es el de las comunicaciones asíncronas con los servidores y el de la manipulación dinámica de las aplicaciones. De todas formas, el manejo de los formularios sigue siendo un requerimiento imprescindible, aunque hoy podemos lograrlo con los nuevos atributos de formularios de HTML5.
@@ -646,7 +730,45 @@ No obstante, la aparición de AJAX y las API's de HTML5 han relevado al tratamie
 
 **[⬆ regresar al índice](#Índice)**
 
-##JSON
+
+## AJAX
+
+Es un acrónimo de **Asynchronous JavaScript + XML** o JavaScript asíncrono + XML.
+
+Ajax no es una tecnología en sí mismo. En realidad, se trata de varias tecnologías independientes que se unen.
+
+Las tecnologías que forman AJAX son:
+
+* **HTML y CSS**, para crear una presentación basada en estándares.
+* **DOM**, para la interacción y manipulación dinámica de la presentación.
+* **XML**, **XSLT** y **JSON**, para el intercambio y la manipulación de información.
+* **XMLHttpRequest**, para el intercambio asíncrono de información.
+* **JavaScript**, para unir todas las demás tecnologías.
+* [Más info de AJAX](http://librosweb.es/libro/ajax/capitulo_7.html)
+* [AJAX en MDN](https://developer.mozilla.org/es/docs/AJAX)
+* [AJAX sin jQuery](http://blog.garstasio.com/you-dont-need-jquery/ajax/)
+
+![Tecnologías AJAX](http://bextlan.com/img/para-cursos/tecnologias-ajax.gif)
+
+En las aplicaciones web tradicionales, las acciones del usuario en la página (pinchar en un botón, seleccionar un valor de una lista, etc.) desencadenan llamadas al servidor. Una vez procesada la petición del usuario, el servidor devuelve una nueva página HTML al navegador del usuario.
+
+Esta técnica tradicional para crear aplicaciones web funciona correctamente, pero no crea una buena sensación al usuario. Al realizar peticiones continuas al servidor, el usuario debe esperar a que se recargue la página con los cambios solicitados. Si la aplicación debe realizar peticiones continuas, su uso se convierte en algo molesto.
+
+AJAX permite mejorar completamente la interacción del usuario con la aplicación, evitando las recargas constantes de la página, ya que el intercambio de información con el servidor se produce en un segundo plano.
+
+![Modelo AJAX](http://bextlan.com/img/para-cursos/modelo-ajax.gif)
+
+Las aplicaciones construidas con AJAX eliminan la recarga constante de páginas mediante la creación de un elemento intermedio entre el usuario y el servidor. La nueva capa intermedia de AJAX mejora la respuesta de la aplicación, ya que el usuario nunca se encuentra con una ventana del navegador vacía esperando la respuesta del servidor.
+
+Las peticiones HTTP al servidor se sustituyen por peticiones JavaScript que se realizan al elemento encargado de AJAX. Las peticiones más simples no requieren intervención del servidor, por lo que la respuesta es inmediata. Si la interacción requiere una respuesta del servidor, la petición se realiza de forma asíncrona. En este caso, la interacción del usuario tampoco se ve interrumpida por recargas de página o largas esperas por la respuesta del servidor.
+
+![Proceso AJAX](http://bextlan.com/img/para-cursos/proceso-ajax.gif)
+
+**[⬆ regresar al índice](#Índice)**
+
+
+## JSON
+
 **JavaScript Object Notation** o Notación de Objetos de JavaScript, es un formato ligero de intercambio de datos. Leerlo y escribirlo es simple para humanos, mientras que para las máquinas es simple interpretarlo y generarlo. 
 
 Está basado en un subconjunto del Lenguaje de Programación JavaScript, Standard ECMA-262 3rd Edition - Diciembre 1999. JSON es un formato de texto que es completamente independiente del lenguaje pero utiliza convenciones que son ampliamente conocidos por los programadores de la familia de lenguajes C, Java, JavaScript, Perl, Python, y muchos otros. Estas propiedades hacen que JSON sea un lenguaje ideal para el intercambio de datos.
@@ -685,50 +807,20 @@ La sintaxis JSON se deriva de sintaxis de notación de objetos JavaScript:
 * Un valor nulo (`null`)
 
 #### Más info
+
 * [JSON.org](http://www.json.org/json-es.html)
-* [JSON en w3schools.com](http://www.w3schools.com/json/)
+* [JSON en w3schools.com](http://www.w3schools.com/js/js_json_intro.asp)
 
 #### Métodos
+
 * [**`JSON.stringify()`**](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/JSON/stringify) convierte un valor a cadena de notación JSON.
 * [**`JSON.parse()`**](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/JSON/parse) analiza una cadena de texto como JSON.
 
 **[⬆ regresar al índice](#Índice)**
 
-##AJAX
-Es un acrónimo de **Asynchronous JavaScript + XML** o JavaScript asíncrono + XML.
 
-Ajax no es una tecnología en sí mismo. En realidad, se trata de varias tecnologías independientes que se unen.
+## API's
 
-Las tecnologías que forman AJAX son:
-
-* **HTML y CSS**, para crear una presentación basada en estándares.
-* **DOM**, para la interacción y manipulación dinámica de la presentación.
-* **XML**, **XSLT** y **JSON**, para el intercambio y la manipulación de información.
-* **XMLHttpRequest**, para el intercambio asíncrono de información.
-* **JavaScript**, para unir todas las demás tecnologías.
-* [Más info de AJAX](http://librosweb.es/libro/ajax/capitulo_7.html)
-* [AJAX en MDN](https://developer.mozilla.org/es/docs/AJAX)
-
-![Tecnologías AJAX](http://bextlan.com/img/para-cursos/tecnologias-ajax.gif)
-
-En las aplicaciones web tradicionales, las acciones del usuario en la página (pinchar en un botón, seleccionar un valor de una lista, etc.) desencadenan llamadas al servidor. Una vez procesada la petición del usuario, el servidor devuelve una nueva página HTML al navegador del usuario.
-
-Esta técnica tradicional para crear aplicaciones web funciona correctamente, pero no crea una buena sensación al usuario. Al realizar peticiones continuas al servidor, el usuario debe esperar a que se recargue la página con los cambios solicitados. Si la aplicación debe realizar peticiones continuas, su uso se convierte en algo molesto.
-
-AJAX permite mejorar completamente la interacción del usuario con la aplicación, evitando las recargas constantes de la página, ya que el intercambio de información con el servidor se produce en un segundo plano.
-
-![Modelo AJAX](http://bextlan.com/img/para-cursos/modelo-ajax.gif)
-
-Las aplicaciones construidas con AJAX eliminan la recarga constante de páginas mediante la creación de un elemento intermedio entre el usuario y el servidor. La nueva capa intermedia de AJAX mejora la respuesta de la aplicación, ya que el usuario nunca se encuentra con una ventana del navegador vacía esperando la respuesta del servidor.
-
-Las peticiones HTTP al servidor se sustituyen por peticiones JavaScript que se realizan al elemento encargado de AJAX. Las peticiones más simples no requieren intervención del servidor, por lo que la respuesta es inmediata. Si la interacción requiere una respuesta del servidor, la petición se realiza de forma asíncrona. En este caso, la interacción del usuario tampoco se ve interrumpida por recargas de página o largas esperas por la respuesta del servidor.
-
-![Proceso AJAX](http://bextlan.com/img/para-cursos/proceso-ajax.gif)
-
-**[⬆ regresar al índice](#Índice)**
-
-
-##API's
 Interfaz de Programación de Aplicaciones, abreviada como API (**Application Programming Interface**), es el conjunto de subrutinas, funciones y procedimientos que ofrece una libreria o framework para ser utilizado por otro software como una capa de abstracción.
 
 Una API representa la capacidad de comunicación entre componentes de software o hardware. Se trata del conjunto de llamadas a ciertas librerias que ofrecen acceso a ciertos servicios desde los procesos y representa un método para conseguir abstracción en la programación, generalmente (aunque no necesariamente) entre los niveles o capas inferiores y los superiores del software. 
@@ -753,8 +845,8 @@ En JavaScript tenemos 2 tipos de API's:
 	* WebSockets
 	* WebWorkers
 	* Touch
+	* [What Web Can Do Today](https://whatwebcando.today/)
 	* etc
-
 * Externas
 	* [API de Google Maps](https://developers.google.com/maps/?hl=es)
 	* [API de YouTube](https://developers.google.com/youtube/)
